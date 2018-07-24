@@ -48,16 +48,17 @@ Park.prototype.popularDino = function(){
 
   // Park.prototype.deleteBySpecies = function(species){
   //   for(dino of this.dinosaurs){
-  //     if(dino.species == species){
-  //       this.removeDino(0, this.dinosaurs.indexOf(dino))
+  //     if(dino.species === species){
+  //       this.dinosaurs.splice(0, this.dinosaurs.indexOf(dino))
   //     }
   //   }
   // }
 
-  Park.prototype.deleteBySpecies = function(dinosaur){
-  let i = this.dinosaurs.indexOf(dinosaur);
-  this.dinosaurs.splice(i, 1);
-}
+//   Park.prototype.deleteBySpecies = function(species){
+//   for (dino of this.dinosaurs){
+//     this.dinosaurs.splice(species, 1);
+//   }
+// }
 
 
 module.exports = Park;
